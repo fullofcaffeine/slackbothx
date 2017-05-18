@@ -1,0 +1,4 @@
+slack:
+  botToken: 'SLACK_BOT_TOKEN'
+  appToken: 'SLACK_APP_TOKEN'
+  verificationToken: 'SLACK_VERIFICATION_TOKEN'

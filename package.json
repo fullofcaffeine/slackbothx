@@ -1,0 +1,46 @@
+{
+  "name": "avenger-bot",
+  "version": "0.0.1",
+  "description": "An experiment of a Slackbot app with Haxe and Xene",
+  "main": "dest/app.js",
+  "scripts": {
+    "start": "haxe build.hxml &&NODE_PATH=./dest node dest/src/app.js",
+    "watch": "[[ ! $NODE_ENV ]] && NODE_ENV='development' && export NODE_ENV; NODE_PATH=./dest node_modules/onchange/cli.js 'dest/app.js' -i -- node dest/app.js",
+    "compile": "haxe build.hxml",
+    "test": "ava dest/test"
+  },
+  "haxe": {
+    "version": "3.4.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fullofcaffeine/slackbothx"
+  },
+  "author": "Avengers",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fullofcaffeine/slackbothx"
+  },
+  "engines": {
+    "node": ">=6.0.0",
+    "npm": ">=3.10.0"
+  },
+  "homepage": "https://github.com/fullofcaffeine/slackbothx#readme",
+  "dependencies": {
+    "@xene/core": "^0.0.2",
+    "@xene/slack": "^0.0.5",
+    "config": "^1.21.0",
+    "express": "^4.14.0",
+    "js-yaml": "^3.6.1",
+    "localtunnel": "^1.8.1",
+    "onchange": "^3.0.2",
+    "strip-indent": "^2.0.0"
+  },
+  "devDependencies": {
+    "ava": "^0.19.1",
+    "gulp": "^3.9.1",
+    "gulp-haxe": "0.4.3",
+    "gulp-shell": "^0.6.3",
+    "gulp-sourcemaps": "2.6.0"
+  }
+}

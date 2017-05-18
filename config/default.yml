@@ -1,0 +1,4 @@
+slack:
+  botToken: 'please set the token in a SLACK_BOT_TOKEN env var'
+  appToken: 'please set the token in a SLACK_APP_TOKEN env var'
+  verificationToken: 'please set the token in a SLACK_VERIFICATION_TOKEN var'

@@ -1,0 +1,21 @@
+language: haxe
+
+sudo: false
+
+env:
+  global:
+    - GH_REF: github.com/HaxeFoundation/hxnodejs.git
+    - secure: Y/G07GhNVPykjFvobBRJnHSCIskWNW2D9GDjZAp5SSr7/6m9ZgwUZeFDa8dsK1GztSGanPJOnrbXIbsItt5do0bVUqp08m79rqUtpjneUJbQmRdzjanGKQT3oiIjdmJ/mVcj1FuwDN9uCq6aHlfOxKP/NTpJ8TlBP3orNs4U6d0=
+
+haxe:
+  - "3.2.0"
+  - "3.2.1"
+  - development
+
+install:
+  haxelib dev hxnodejs .
+
+script:
+  - haxe build.hxml
+  - haxelib git dox https://github.com/HaxeFoundation/dox
+  - bash doc-deploy.sh

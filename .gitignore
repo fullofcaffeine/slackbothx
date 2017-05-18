@@ -1,0 +1,45 @@
+# Framework folders
+
+/log
+/tmp
+
+# Local configuration
+
+/.env
+/.rbenv-vars
+/.rbenv-version
+/.ruby-gemset
+/.ruby-version
+/.rvmrc
+
+# Build and tool artifacts
+
+*.DS_Store
+*.iml
+/.bundle
+/bundle
+.idea
+
+# Logs
+logs
+*.log
+npm-debug.log*
+
+# Runtime data
+pids
+*.pid
+*.seed
+
+# Dependency directories
+node_modules
+jspm_packages
+
+# Optional npm cache directory
+.npm
+
+.DS_Store
+
+# Compiled
+dest
+
+.*

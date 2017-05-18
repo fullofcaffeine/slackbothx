@@ -1,0 +1,8 @@
+-cp js-kit
+-cp src
+-cp hxnodejs/src
+-lib tink_core
+-lib tink_await
+-main Main
+-dce full
+-js app.js
